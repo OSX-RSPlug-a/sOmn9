@@ -49,8 +49,13 @@ To init this project:
    On the backend folder:
    
       - npm run dev
+      
+   link: localhost:3333
+   
     
    On the frontend folder:
    
       - npm start
       
+  link: localhost:3000
+  
