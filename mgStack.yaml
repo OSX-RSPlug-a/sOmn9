@@ -6,11 +6,11 @@ services:
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_BASICAUTH_USERNAME: mgadmin
-      ME_CONFIG_BASICAUTH_PASSWORD: mgadmin#-098765!
+      ME_CONFIG_BASICAUTH_USERNAME: URUS
+      ME_CONFIG_BASICAUTH_PASSWORD: URPASS
       ME_CONFIG_MONGODB_PORT: 27017
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: mgroot#-098765!
+      ME_CONFIG_MONGODB_ADMINUSERNAME: URROOT
+      ME_CONFIG_MONGODB_ADMINPASSWORD: URPASSROOT
     links:
       - mongo
     networks:
@@ -19,8 +19,8 @@ services:
   mongo:
     image: mongo
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: mgroot#-098765!
+      MONGO_INITDB_ROOT_USERNAME: URROOT
+      MONGO_INITDB_ROOT_PASSWORD: URPASSROOT
     ports:
       - 27017:27017
     volumes:
