@@ -14,7 +14,7 @@ const app = express()
 const server = http.Server(app)
 const io = socketio(server)
 
-mongoose.connect('mongodb://localhost/somn9_mongo-express_1',{ 
+mongoose.connect('mongodb://URHOST/URDocker/URDBEXPSS/',{ 
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -22,7 +22,7 @@ mongoose.connect('mongodb://localhost/somn9_mongo-express_1',{
 .then(() => console.log('MongoDB-express Connected'))
 .catch(err => console.error(err))
 
-mongoose.connect('mongodb://0.0.0.0:27017/User?authSource=admin',{ 
+mongoose.connect('mongodb:/URHOST/URDB?authSource=URMasteruser',{ 
   user: process.env.user,
   pass: process.env.pass,
   keepAlive: true,
