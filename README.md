@@ -31,11 +31,11 @@ To init this project:
 
 3 - Run command:
 
-    - docker-compose -f THENAME.yaml up -d
+        - docker-compose -f THENAME.yaml up -d
 
   So there are 3 containers on ports:
 
-    localhost:9000 (Composer to administrate your containers on browser);
+    localhost:9000 (Portainer a cli view to administrate your containers on browser);
 
     0.0.0.0:8081 (mongo-express server; For the cli admin your Schemas from moongoDb );
 
@@ -44,7 +44,7 @@ To init this project:
 
 4 - Run the commands on folder backend and frontend:    
 
-   - npm i (to push and install all dependencies)
+      - npm i (to push and install all dependencies)
 
    On the backend folder:
    
